@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!---<table>标签，<tr>行，<td>列-->
+    <table>
+        <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td>33</td>
+        </tr>
+    </table>
+    <!---快速生成表格键:table>tr*n>td*m-->
+    <table border="1" width="400"height="400">
+        <tr>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+        </tr>
+        <tr>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+        </tr>
+        <tr>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+        </tr>
+        <tr>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+        </tr>
+    </table>
+    <!---表格属性
+    border：设置表格的边款
+    width：设置表格的宽度
+    height：设置表格的高度-->
+
+    <!---表格单元合并-->
+    <!---水平合并：colspan，保留左边，删除右边
+    垂直合并：rowspan，保留上边，删除下边
+    -->
+    <p>合并单元格12，13：colspan</p>
+    <p>合并单元格21，31:rowspan</p>
+    <table border="1" width="200" height="200"
+        <tr>
+            <td colspan="2">12</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td rowspan="2">21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td>33</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>42</td>
+            <td>43</td>
+            <td>44</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>52</td>
+            <td>53</td>
+            <td>54</td>
+        </tr>
+    </table>
+</body>
+</html>
